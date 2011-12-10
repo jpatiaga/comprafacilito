@@ -61,3 +61,8 @@ fieldset legend {
 .node-teaser {
   margin-top: 10px;
 }
+
+/* OVERRIDE */
+body.node-type-producto #comprar_ahora {
+	width: 120px;
+}
