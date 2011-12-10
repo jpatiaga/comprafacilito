@@ -1,0 +1,74 @@
+#breadcrumb {
+	display: none;
+}
+
+#block-views-pedido-form-block .view h2,
+#block-views-pedido-form-block .view .submitted,
+#block-views-pedido-form-block .view .form-required {
+	display: none;
+}
+
+#block-views-pedido-form-block > h2 {
+	color: #EE018D;
+	font-weight: bold;
+	margin-top: 0;
+}
+#block-views-pedido-form-block .form-item {
+	margin-bottom: 5px;
+}
+#block-views-pedido-form-block input {
+	margin-top: 0;
+}
+#block-views-pedido-form-block #webform-component-forma-de-pago p {
+	margin-bottom: 0;
+}
+
+body.node-type-producto textarea {
+	width: auto;
+}
+
+body.node-type-producto .field-name-field-imagen {
+	float: left;
+	padding-right: 20px;
+}
+body.node-type-producto .field-name-field-precio {
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+body.node-type-producto .field-name-field-precio .field-label {
+	float: left;
+	color: #EE018D;
+	font-size: 16px;
+	line-height: 30px;
+}
+body.node-type-producto .field-name-field-precio .field-items {
+	font-size: 20px;
+	float: left;
+}
+body.node-type-producto #comprar_ahora {
+	float: right;
+}
+
+body.node-type-producto input.form-submit,
+body.node-type-producto a.button,
+body.node-type-webform input.form-submit {
+	color: #fff;
+	font-weight: bold;
+	background-image: url('../images/buttons_cf.png');
+}
+body.node-type-producto input.form-submit:hover,
+body.node-type-producto a.button:hover,
+body.node-type-webform input.form-submit:hover {
+	color: #fff;
+	background: none no-repeat scroll 0 0 #EE018D;
+}
+
+body.node-type-producto #edit-actions input {
+	font-size: 20px;
+}
+
+
+/* PAGE DONE */
+body.page-node-done #block-system-main .links {
+	display: none;
+}
