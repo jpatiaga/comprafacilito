@@ -1,5 +1,5 @@
 <?php
-$subdomain = preg_replace('/^(?:([^\.]+)\.)?comprafacilito\.local$/', '\1', $_SERVER['SERVER_NAME']);
+$subdomain = preg_replace('/^(?:([^\.]+)\.)?comprafacilito\.com$/', '\1', $_SERVER['SERVER_NAME']);
 if ($subdomain == 'promociones' && arg(1) && is_numeric(arg(1))):
 	$node = node_load(arg(1));
 	if ($node->type == 'producto'):
@@ -12,7 +12,7 @@ if ($subdomain == 'promociones' && arg(1) && is_numeric(arg(1))):
 		<table border="0" cellpadding="0" cellspacing="0" style="border: 0;" width="600" align="center">
 			<tr>
 				<td align="center" style="font-size: 11px;">
-					Si no puede ver correctamente este mensaje o sus im&aacute;genes, por favor haga click <a href="http://comprafacilito.local/node/<?php echo $node->nid ?>">aqu&iacute;</a>
+					Si no puede ver correctamente este mensaje o sus im&aacute;genes, por favor haga click <a href="http://comprafacilito.com/node/<?php echo $node->nid ?>">aqu&iacute;</a>
 				</td>
 			</tr>
 			<tr>
@@ -25,10 +25,10 @@ if ($subdomain == 'promociones' && arg(1) && is_numeric(arg(1))):
 					<table border="0" cellpadding="0" cellspacing="0" width="600">
 						<tr>
 							<td width="100">
-								<a href="http://comprafacilito.local/node/<?php echo $node->nid ?>"><img border="0" src="http://comprafacilito.local/sites/default/files/logo_smaller.png" alt="CompraFacilito.com" /></a>
+								<a href="http://comprafacilito.com/node/<?php echo $node->nid ?>"><img border="0" src="http://comprafacilito.com/sites/default/files/logo_smaller.png" alt="CompraFacilito.com" /></a>
 							</td>
 							<td width="500">
-								<h1><a href="http://comprafacilito.local/node/<?php echo $node->nid ?>" style="color: #000; text-decoration: none;"><?php echo $node->title ?></a></h1>
+								<h1><a href="http://comprafacilito.com/node/<?php echo $node->nid ?>" style="color: #000; text-decoration: none;"><?php echo $node->title ?></a></h1>
 							</td>
 						</tr>
 					</table>
@@ -41,12 +41,12 @@ if ($subdomain == 'promociones' && arg(1) && is_numeric(arg(1))):
 			</tr>
 			<tr>
 				<td align="center">
-					<a href="http://comprafacilito.local/node/<?php echo $node->nid ?>"><img border="0" style="padding-bottom: 15px;" src="http://comprafacilito.local/sites/default/files/productos/<?php echo $node->field_imagen['und'][0]['filename'] ?>" alt="<?php echo $node->title ?>" /></a>
+					<a href="http://comprafacilito.com/node/<?php echo $node->nid ?>"><img border="0" style="padding-bottom: 15px;" src="http://comprafacilito.com/sites/default/files/productos/<?php echo $node->field_imagen['und'][0]['filename'] ?>" alt="<?php echo $node->title ?>" /></a>
 				</td>
 			</tr>
 			<tr>
 				<td align="center">
-					<a style="font-size: 24px; font-weight: bold; margin-bottom: 10px; color: #000; text-decoration: none;" href="http://comprafacilito.local/node/<?php echo $node->nid ?>">Oferta <span style="color: #EE018D;">CompraFacilito</span>: $<?php echo number_format($node->field_precio['und'][0]['value'], 2, ',', '.') ?></a>
+					<a style="font-size: 24px; font-weight: bold; margin-bottom: 10px; color: #000; text-decoration: none;" href="http://comprafacilito.com/node/<?php echo $node->nid ?>">Oferta <span style="color: #EE018D;">CompraFacilito</span>: $<?php echo number_format($node->field_precio['und'][0]['value'], 2, ',', '.') ?></a>
 				</td>
 			</tr>
 			<tr>
@@ -56,7 +56,7 @@ if ($subdomain == 'promociones' && arg(1) && is_numeric(arg(1))):
 			</tr>
 			<tr>
 				<td align="center">
-					<p style="font-size: 24px; font-weight: bold; margin-top: 20px;">Realice su pedido haciendo clic <a style="color: #FF0000;" href="http://comprafacilito.local/node/<?php echo $node->nid ?>">AQUI</a></p>
+					<p style="font-size: 24px; font-weight: bold; margin-top: 20px;">Realice su pedido haciendo clic <a style="color: #FF0000;" href="http://comprafacilito.com/node/<?php echo $node->nid ?>">AQUI</a></p>
 				</td>
 			</tr>
 			<tr>
